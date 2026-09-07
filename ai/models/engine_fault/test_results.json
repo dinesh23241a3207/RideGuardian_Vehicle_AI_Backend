@@ -1,0 +1,79 @@
+{
+    "samples": 55999,
+    "training_samples": 39199,
+    "validation_samples": 8400,
+    "test_samples": 8400,
+    "features": [
+        "AFR",
+        "CO",
+        "CO2",
+        "Consumption L/100KM",
+        "Consumption L/H",
+        "Force",
+        "HC",
+        "Lambda",
+        "MAP",
+        "O2",
+        "Power",
+        "RPM",
+        "Speed",
+        "TPS"
+    ],
+    "classes": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "validation_accuracy": 0.7503571428571428,
+    "validation_precision": 0.7510463181014514,
+    "validation_recall": 0.7503571428571428,
+    "validation_f1": 0.750333778062473,
+    "test_accuracy": 0.7446428571428572,
+    "test_precision": 0.7453586154048506,
+    "test_recall": 0.7446428571428572,
+    "test_f1": 0.7445943958469696,
+    "confusion_matrix": [
+        [
+            2400,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            1650,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            1092,
+            1158
+        ],
+        [
+            0,
+            0,
+            987,
+            1113
+        ]
+    ],
+    "training_time_seconds": 1.663039207458496,
+    "feature_importance": {
+        "CO": 0.13378308046072135,
+        "Force": 0.10305381074530953,
+        "HC": 0.08280062169054331,
+        "Power": 0.08146342483067834,
+        "Consumption L/H": 0.08130025557224328,
+        "Consumption L/100KM": 0.0797133025751124,
+        "Speed": 0.07692927026675829,
+        "O2": 0.06922251770744285,
+        "CO2": 0.06903436097325955,
+        "RPM": 0.06886062470292922,
+        "TPS": 0.04998987875624503,
+        "MAP": 0.039414084423949676,
+        "AFR": 0.036584100509176286,
+        "Lambda": 0.027850666785630813
+    }
+}

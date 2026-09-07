@@ -1,0 +1,20 @@
+{
+  "input": "C:\\RIDER_SYSTEM\\RideGuardian\\ai\\datasets\\rides\\processed\\ride_readings_processed_with_split.csv",
+  "model": "C:\\RIDER_SYSTEM\\RideGuardian\\ai\\models\\rider_behavior\\behavior_gru.keras",
+  "scaler": "C:\\RIDER_SYSTEM\\RideGuardian\\ai\\datasets\\rides\\behavior_events_v4_scaled\\behavior_scaler.joblib",
+  "sequenceLength": 30,
+  "stride": 10,
+  "totalPredictionWindows": 160,
+  "predictionDistribution": {
+    "NORMAL": 140,
+    "HIGH_SPEED": 3,
+    "HARD_ACCELERATION": 2,
+    "HARD_BRAKING": 2,
+    "SUDDEN_TURN": 13,
+    "MULTI_EVENT": 0
+  },
+  "averageConfidence": 0.4720136419869959,
+  "minimumConfidence": 0.23161444067955017,
+  "maximumConfidence": 0.7137035727500916,
+  "ruleEventWindows": 30
+}

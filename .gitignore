@@ -1,0 +1,45 @@
+# ==========================================
+# DATASETS - NOT REQUIRED FOR PREDICTION
+# ==========================================
+
+data/
+datasets/
+
+ai/body_yolo/**/images/
+ai/body_yolo/**/labels/
+
+runs/
+results/
+
+
+# ==========================================
+# OLD / UNUSED AI MODELS
+# ==========================================
+
+ai/models/coatnet/
+
+ai/models/damage/damage_v1/
+
+ai/models/tyre_condition/
+
+ai/models/vehicle_parts_v2/
+
+
+# ==========================================
+# ENGINE FAULT MODEL - CURRENTLY NOT DEPLOYED
+# ==========================================
+
+ai/models/engine_fault/engine_fault_random_forest.joblib
+
+
+# ==========================================
+# PYTHON / ENVIRONMENT
+# ==========================================
+
+__pycache__/
+*.pyc
+
+venv/
+.venv/
+
+.env

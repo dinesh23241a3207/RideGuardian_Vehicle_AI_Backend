@@ -1,0 +1,101 @@
+{
+  "model": "C:\\RIDER_SYSTEM\\RideGuardian\\ai\\models\\rider_behavior\\event_behavior_gru.keras",
+  "sequenceLength": 30,
+  "featureCount": 10,
+  "classes": [
+    "NORMAL",
+    "HIGH_SPEED",
+    "HARD_ACCELERATION",
+    "HARD_BRAKING",
+    "SUDDEN_TURN"
+  ],
+  "trainSamples": 150,
+  "validationSamples": 12,
+  "testSamples": 9,
+  "testLoss": 0.6426250338554382,
+  "accuracy": 0.8888888888888888,
+  "macroF1": 0.32,
+  "weightedF1": 0.9037037037037037,
+  "confusionMatrix": [
+    [
+      7,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "classificationReport": {
+    "NORMAL": {
+      "precision": 1.0,
+      "recall": 0.875,
+      "f1-score": 0.9333333333333333,
+      "support": 8.0
+    },
+    "HIGH_SPEED": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 1.0
+    },
+    "HARD_ACCELERATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "HARD_BRAKING": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "SUDDEN_TURN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.8888888888888888,
+    "macro avg": {
+      "precision": 0.3,
+      "recall": 0.375,
+      "f1-score": 0.32,
+      "support": 9.0
+    },
+    "weighted avg": {
+      "precision": 0.9444444444444444,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9037037037037037,
+      "support": 9.0
+    }
+  }
+}

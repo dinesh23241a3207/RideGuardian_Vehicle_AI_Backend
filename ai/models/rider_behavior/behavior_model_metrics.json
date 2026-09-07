@@ -1,0 +1,115 @@
+{
+  "model": "GRU",
+  "sequenceLength": 30,
+  "featureCount": 10,
+  "classes": [
+    "NORMAL",
+    "HIGH_SPEED",
+    "HARD_ACCELERATION",
+    "HARD_BRAKING",
+    "SUDDEN_TURN",
+    "MULTI_EVENT"
+  ],
+  "trainingSamples": 378,
+  "validationSamples": 12,
+  "testSamples": 9,
+  "testAccuracy": 0.8888888888888888,
+  "perClass": {
+    "NORMAL": {
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "f1": 0.9411764705882353,
+      "support": 8
+    },
+    "HIGH_SPEED": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1
+    },
+    "HARD_ACCELERATION": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "HARD_BRAKING": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "SUDDEN_TURN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "MULTI_EVENT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    }
+  },
+  "confusionMatrix": [
+    [
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "classWeights": {
+    "0": 0.5,
+    "1": 5.0,
+    "2": 5.0,
+    "3": 5.0,
+    "4": 0.9333333333333333
+  },
+  "epochsConfigured": 100,
+  "batchSize": 16,
+  "learningRate": 0.001
+}

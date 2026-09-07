@@ -1,0 +1,14 @@
+path: C:/RIDER_SYSTEM/RideGuardian/ai/body_yolo/damage
+train: images/train
+val: images/val
+test: images/test
+nc: 8
+names:
+  0: 'Broken part'
+  1: 'Corrosion'
+  2: 'Cracked'
+  3: 'Dent'
+  4: 'Flaking'
+  5: 'Missing part'
+  6: 'Paint chip'
+  7: 'Scratch'

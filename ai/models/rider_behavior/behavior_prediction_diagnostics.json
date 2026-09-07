@@ -1,0 +1,39 @@
+{
+  "predictionWindows": 160,
+  "eventWindows": 30,
+  "matches": 9,
+  "mismatches": 21,
+  "overallMatchRate": 0.3,
+  "averageConfidence": 0.4720136419869959,
+  "lowConfidenceWindows": 86,
+  "eventStatistics": {
+    "HIGH_SPEED": {
+      "windows": 10,
+      "matches": 3,
+      "mismatches": 7,
+      "matchRate": 0.3,
+      "averageConfidence": 0.4202309787273407
+    },
+    "HARD_ACCELERATION": {
+      "windows": 3,
+      "matches": 0,
+      "mismatches": 3,
+      "matchRate": 0.0,
+      "averageConfidence": 0.6093666752179464
+    },
+    "SUDDEN_TURN": {
+      "windows": 14,
+      "matches": 6,
+      "mismatches": 8,
+      "matchRate": 0.42857142857142855,
+      "averageConfidence": 0.41837758677346365
+    },
+    "MULTI_EVENT": {
+      "windows": 3,
+      "matches": 0,
+      "mismatches": 3,
+      "matchRate": 0.0,
+      "averageConfidence": 0.4108070780833562
+    }
+  }
+}
