@@ -15,6 +15,30 @@ import requests
 # ============================================================
 
 BASE_DIR = Path(__file__).resolve().parent
+# ============================================================
+# VEHICLE AI MODEL PREPARATION
+#
+# Download or validate the required models BEFORE importing
+# vehicle_diagnosis_api. This is important because that module
+# loads the AI models immediately during import.
+# ============================================================
+
+try:
+
+    from model_downloader import ensure_models
+
+    ensure_models()
+
+    print(
+        "Vehicle AI models prepared successfully"
+    )
+
+except Exception as error:
+
+    print(
+        "Vehicle AI model preparation failed:",
+        str(error)
+    )
 
 
 # ============================================================
@@ -62,12 +86,30 @@ except Exception as error:
         str(error)
     )
 
+# ============================================================
+# DOWNLOAD / VERIFY VEHICLE AI MODELS
+# ============================================================
 
+try:
+
+    ensure_models()
+
+    print(
+        "Vehicle AI models verified successfully"
+    )
+
+except Exception as error:
+
+    print(
+        "Vehicle AI model preparation failed:",
+        str(error)
+    )
 # ============================================================
 # VEHICLE AI
 #
 # This is the primary system for this backend.
 # ============================================================
+
 
 VEHICLE_AI_AVAILABLE = False
 
